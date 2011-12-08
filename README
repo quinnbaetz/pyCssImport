@@ -1,0 +1,25 @@
+Resolves @imports in css
+
+Usage python: 
+import pyCssImport
+
+#prints out compilation relative to file
+compile("path/to/file")
+
+#prints out compilation relative to "path/to/file"
+compile("path/to/file", "path/to")
+
+
+Usage commandline:
+
+#prints out compilation relative to file
+python pyCssImport "path/to/file"
+
+
+
+
+
+
+
+
+
