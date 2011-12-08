@@ -78,7 +78,7 @@ def compile(subpath, path="./"):
     resolvedSource = regex.sub("", origSource)
 
     #replace relative urls
-    regex = re.compile('(url\([\'\"]?([^/].+)[\'\"]?\))')
+    regex = re.compile('(url\([\'\"]?([^/].+?)[\'\"]?\))')
     
     def fixUrl(matchObj):
         newUrl =  "url('"+os.path.join(os.path.dirname(subpath),matchObj.group(2))+"')"
